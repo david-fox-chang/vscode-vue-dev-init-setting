@@ -15,7 +15,7 @@ cd path/to/project/root # 專案根目錄
 git clone https://github.com/david-fox-chang/vscode-vue-dev-init-setting.git .
 npm i eslint eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-vue prettier -D
 [[ -f README.md.bak ]] && mv README.md.bak README.md
-rm .git && [[ -d .git.bak ]] && mv .git.bak .git
+rm -rf .git && [[ -d .git.bak ]] && mv .git.bak .git
 ```
 
 詳細設定內容，已有[珠玉](http://stariveer.coding.me/fe-doc/code_format/Getting-Started.html)在前，不再贅述
