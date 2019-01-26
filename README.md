@@ -5,13 +5,14 @@
 解決每次要開新專案時，都要處理一堆編輯器設定的麻煩😂
 
 1️⃣ 先切換到 `專案根目錄` 
+
 ❗ 如果害怕 `.git 目錄`、`README.md 文件` 會出問題，**請先備份** 💪
 
 ```bash
 cd path/to/project/root # 專案根目錄
 [[ -f README.md ]] && mv README.md README.md.bak
 [[ -d .git ]] && mv .git .git.bak
-git clone   .
+git clone https://github.com/david-fox-chang/vscode-vue-dev-init-setting.git .
 npm i eslint eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-vue prettier -D
 [[ -f README.md.bak ]] && mv README.md.bak README.md
 rm .git && [[ -d .git.bak ]] && mv .git.bak .git
