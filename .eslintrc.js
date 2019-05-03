@@ -13,7 +13,6 @@ module.exports = {
   extends: [
     'plugin:vue/essential',
     'airbnb-base',
-    'prettier',
     'eslint:recommended',
   ],
   // required to lint *.vue files
@@ -60,7 +59,6 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 
-    'prettier/prettier': 1,
     'no-undef': 2, // 禁用未声明的变量，除非它们在 /*global */ 注释中被提到. e.g. /* global Stomp SockJS */ in .vue file's <scrpit>
     'no-extend-native': 2, // 禁止扩展原生类型
     'no-return-assign': 2, // 禁止在 return 语句中使用赋值语句
